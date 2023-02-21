@@ -27,5 +27,5 @@ if __name__ == "__main__":
     mini = Minimap(TeamA = "BotA", TeamB = "BotB")
     mini.PlayersAInfo, mini.PlayersBInfo, mini.ballInfo = PlayersAInfo, PlayersBInfo, ballInfo
     fig = mini.CreateMinimap()
-    fig.savefig('image/image_voltron.png', dpi=100) 
+    fig.savefig('image/snookers.png', dpi=100) 
     plt.show()

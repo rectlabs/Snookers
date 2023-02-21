@@ -40,7 +40,7 @@ class SoccerModule:
         court_type = self.court_type
         unity = self.unity 
         linecolor = self.linecolor  
-        fig, ax = createPitch(120,75, unity = 'meters', linecolor = linecolor, court_type= court_type)
+        fig, ax = createPitch(120,75, unity = 'meters', linecolor = linecolor)
         fig.set_size_inches(10, 7)
         #fig.savefig('sonalysis_imag1.png', dpi=100)
         return fig, ax

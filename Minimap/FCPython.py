@@ -40,10 +40,10 @@ def createPitch(length,width, unity,linecolor): # in meters
             plt.plot([length/5,length/5], [boardthickness,width], color = linecolor) # C
             #plt.plot([]) #TODO external line around the snookers
 
-            plt.plot([0,0], [0, width], color = linecolor)
-            plt.plot([0, length], [width, width], color = linecolor)
-            plt.plot([length, length], [width, 0], color = linecolor)
-            plt.plot([0, length], [0, 0], color = linecolor)
+            plt.plot([0,0], [0, width], color = "blue")
+            plt.plot([0, length], [width, width], color = "blue")
+            plt.plot([length, length], [width, 0], color = "blue")
+            plt.plot([0, length], [0, 0], color = "blue")
 
            
             # #Prepare Arcs

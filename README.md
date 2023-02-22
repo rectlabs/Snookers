@@ -1,6 +1,6 @@
 # Snookers
 
-![image](images/snookers.png)
+![image](image/snookers.png)
 
 ## run notebook
 

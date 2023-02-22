@@ -31,8 +31,8 @@ def createPitch(length,width, unity,linecolor): # in meters
             ax=fig.add_subplot(1,1,1)
            
             #Pitch Outline & Centre Line
-            arcDiam = 5
-            plt.plot([0,0],[arcDiam,width-archDiam], color=linecolor)
+            archDiam = 5
+            plt.plot([0,0],[archDiam,width-archDiam], color=linecolor)
             plt.plot([archDiam,length-archDiam],[width,width], color=linecolor)
             plt.plot([length,length],[width-archDiam,archDiam], color=linecolor)
             plt.plot([length-archDiam,archDiam],[0,0], color=linecolor)

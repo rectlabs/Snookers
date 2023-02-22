@@ -40,10 +40,10 @@ def createPitch(length,width, unity,linecolor): # in meters
 
            
             # #Prepare Arcs
-            leftArcDown = Arc((0,0),height=5,width=5,angle=90,color=linecolor)
-            leftArcUp = Arc((0,width),height=5,width=5,angle=270,color=linecolor)
-            rightArcUp = Arc((length, width),height=5,width=5,angle=180,color=linecolor)
-            rightArcDown = Arc((length, 0), height=5, width=5, angle=90, color=linecolor)
+            leftArcDown = Arc((0,0),height=archDiam*2,width=archDiam*2,angle=90,theta1 = 0, color=linecolor)
+            leftArcUp = Arc((0,width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 270, color=linecolor)
+            rightArcUp = Arc((length, width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, color=linecolor)
+            rightArcDown = Arc((length, 0), height=archDiam*2, width=archDiam*2, angle=90, theta1 = 90, color=linecolor)
             
             # #Draw Arcs
             ax.add_patch(leftArcDown)

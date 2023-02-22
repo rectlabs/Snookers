@@ -40,12 +40,16 @@ def createPitch(length,width, unity,linecolor): # in meters
 
            
             # #Prepare Arcs
-            # leftArc = Arc((11,width/2),height=18.3,width=18.3,angle=0,theta1=308,theta2=52,color=linecolor)
-            # rightArc = Arc((length-11,width/2),height=18.3,width=18.3,angle=0,theta1=128,theta2=232,color=linecolor)
+            leftArcDown = Arc((0,0),height=5,width=5,angle=90,color=linecolor)
+            leftArcUp = Arc((0,width),height=5,width=5,angle=270,color=linecolor)
+            rightArcUp = Arc((length, width),height=5,width=5,angle=180,color=linecolor)
+            rightArcDown = Arc((length, 0), height=5, width=5, angle=90, color=linecolor)
             
             # #Draw Arcs
-            # ax.add_patch(leftArc)
-            # ax.add_patch(rightArc)
+            ax.add_patch(leftArcDown)
+            ax.add_patch(leftArcUp)
+            ax.add_patch(rightArcUp)
+            ax.add_patch(rightArcDown)
             
     #check unity again
     elif unity == "yards":

@@ -51,9 +51,7 @@ def createPitch(length,width, unity,linecolor): # in meters
             ax.add_patch(rightArcUp)
             ax.add_patch(rightArcDown)
 
-           
-            ax.set_facecolor("black")
-            
+                       
     #check unity again
     elif unity == "yards":
         #check boundaries again

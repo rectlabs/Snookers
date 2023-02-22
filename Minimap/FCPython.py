@@ -42,7 +42,7 @@ def createPitch(length,width, unity,linecolor): # in meters
             # #Prepare Arcs
             leftArcDown = Arc((0,0),height=archDiam*2,width=archDiam*2,angle=90,theta1 = 270, theta2=360, color=linecolor)
             leftArcUp = Arc((0,width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, theta2 = 270, color=linecolor)
-            rightArcUp = Arc((length, width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, theta2 = 270, color=linecolor)
+            rightArcUp = Arc((length, width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 90, theta2 = 180, color=linecolor)
             rightArcDown = Arc((length, 0), height=archDiam*2, width=archDiam*2, angle=90, theta1 = 0,theta2 = 90, color=linecolor)
             
             # #Draw Arcs

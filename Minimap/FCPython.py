@@ -32,10 +32,10 @@ def createPitch(length,width, unity,linecolor): # in meters
            
             #Pitch Outline & Centre Line
             arcDiam = 5
-            plt.plot([0,arcDiam],[0,width-arcDiam], color=linecolor)
-            plt.plot([0,length],[width,width], color=linecolor)
-            plt.plot([length,length],[width,0], color=linecolor)
-            plt.plot([length-arcDiam,0],[arcDiam,0], color=linecolor)
+            plt.plot([0,0],[arcDiam,width-archDiam], color=linecolor)
+            plt.plot([archDiam,length-archDiam],[width,width], color=linecolor)
+            plt.plot([length,length],[width-archDiam,archDiam], color=linecolor)
+            plt.plot([length-archDiam,archDiam],[0,0], color=linecolor)
             plt.plot([length/5,length/5], [0,width], color = linecolor)
 
            

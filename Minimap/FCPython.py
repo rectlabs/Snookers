@@ -32,12 +32,13 @@ def createPitch(length,width, unity,linecolor): # in meters
            
             #Pitch Outline & Centre Line
             archDiam = 5
-            boardthickness = 10
-            plt.plot([boardthickness,boardthickness],[archDiam,width-archDiam], color=linecolor) # A
-            plt.plot([archDiam,length-archDiam],[width,width], color=linecolor)
-            plt.plot([length,length],[width-archDiam,archDiam], color=linecolor)
-            plt.plot([length-archDiam,archDiam],[boardthickness,boardthickness], color=linecolor) # B
-            plt.plot([length/5,length/5], [boardthickness,width], color = linecolor) # C
+            boardthickness = 
+            # inner converings
+            plt.plot([boardthickness,boardthickness],[archDiam+boardthickness,width-archDiam-boardthickness], color=linecolor) # A
+            plt.plot([archDiam+boardthickness,length-archDiam-boardthickness],[width-boardthickness,width-boardthickness], color=linecolor)
+            plt.plot([length-boardthickness,length-boardthickness],[width-archDiam-boardthickness,archDiam+boardthickness], color=linecolor)
+            plt.plot([length-archDiam-boardthickness,archDiam+boardthickness],[boardthickness,boardthickness], color=linecolor) # B
+            plt.plot([(length/5) + boardthickness ,(length/5) + boardthickness], [boardthickness,width-boardthickness], color = linecolor) # C
             #plt.plot([]) #TODO external line around the snookers
 
             plt.plot([0,0], [0, width], color = "blue")
@@ -47,10 +48,10 @@ def createPitch(length,width, unity,linecolor): # in meters
 
            
             # #Prepare Arcs
-            leftArcDown = Arc((0,0),height=archDiam*2,width=archDiam*2,angle=90,theta1 = 270, theta2=360, color=linecolor)
-            leftArcUp = Arc((0,width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, theta2 = 270, color=linecolor)
-            rightArcUp = Arc((length, width),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 90, theta2 = 180, color=linecolor)
-            rightArcDown = Arc((length, 0), height=archDiam*2, width=archDiam*2, angle=90, theta1 = 0,theta2 = 90, color=linecolor)
+            leftArcDown = Arc((boardthickness, boardthickness),height=archDiam*2,width=archDiam*2,angle=90,theta1 = 270, theta2=360, color=linecolor)
+            leftArcUp = Arc((boardthickness,width-boardthickness),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, theta2 = 270, color=linecolor)
+            rightArcUp = Arc((length-boardthickness, width-boardthickness),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 90, theta2 = 180, color=linecolor)
+            rightArcDown = Arc((length-boardthickness, boardthickness), height=archDiam*2, width=archDiam*2, angle=90, theta1 = 0,theta2 = 90, color=linecolor)
             
             # #Draw Arcs
             ax.add_patch(leftArcDown)

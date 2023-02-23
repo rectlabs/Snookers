@@ -35,11 +35,11 @@ def createPitch(length,width, unity,linecolor): # in meters
             boardthickness = 10
             # inner converings
             plt.plot([boardthickness,boardthickness],[archDiam+boardthickness,width-archDiam-boardthickness], color=linecolor) 
-            plt.plot([archDiam+boardthickness,length*0.50-(archDiam)/2],[width-boardthickness,width-boardthickness], color=linecolor) # A
-            plt.plot([length*0.50+(archDiam)/2,length-archDiam-boardthickness],[width-boardthickness,width-boardthickness], color=linecolor) # A
+            plt.plot([archDiam+boardthickness,length*0.50-archDiam*0.5-boardthickness*0.25],[width-boardthickness,width-boardthickness], color=linecolor) # A
+            plt.plot([length*0.50+archDiam*0.5+boardthickness*0.25,length-archDiam-boardthickness],[width-boardthickness,width-boardthickness], color=linecolor) # A
             plt.plot([length-boardthickness,length-boardthickness],[width-archDiam-boardthickness,archDiam+boardthickness], color=linecolor)
-            plt.plot([length*0.50-(archDiam)/2,archDiam+boardthickness],[boardthickness,boardthickness], color=linecolor) # B
-            plt.plot([length*0.50+(archDiam)/2,length-archDiam-boardthickness],[boardthickness,boardthickness], color=linecolor) # B
+            plt.plot([length*0.50-archDiam*0.5 - boardthickness*0.25,archDiam+boardthickness],[boardthickness,boardthickness], color=linecolor) # B
+            plt.plot([length*0.50+archDiam*0.5 + boardthickness*0.25,length-archDiam-boardthickness],[boardthickness,boardthickness], color=linecolor) # B
             plt.plot([(length/5) + boardthickness ,(length/5) + boardthickness], [boardthickness,width-boardthickness], color = linecolor) 
             #plt.plot([]) #TODO external line around the snookers
 

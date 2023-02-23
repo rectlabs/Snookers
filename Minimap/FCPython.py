@@ -34,17 +34,19 @@ def createPitch(length,width, unity,linecolor): # in meters
             archDiam = 5
             boardthickness = 5
             # inner converings
-            plt.plot([boardthickness,boardthickness],[archDiam+boardthickness,width-archDiam-boardthickness], color=linecolor) # A
-            plt.plot([archDiam+boardthickness,length-archDiam-boardthickness],[width-boardthickness,width-boardthickness], color=linecolor)
+            plt.plot([boardthickness,boardthickness],[archDiam+boardthickness,width-archDiam-boardthickness], color=linecolor) 
+            plt.plot([archDiam+boardthickness,(length-archDiam-boardthickness)/2],[width-boardthickness,width-boardthickness], color=linecolor) # A
+            plt.plot([(length+archDiam+boardthickness)/2,length-archDiam-boardthickness],[width-boardthickness,width-boardthickness], color=linecolor) # A
             plt.plot([length-boardthickness,length-boardthickness],[width-archDiam-boardthickness,archDiam+boardthickness], color=linecolor)
-            plt.plot([length-archDiam-boardthickness,archDiam+boardthickness],[boardthickness,boardthickness], color=linecolor) # B
-            plt.plot([(length/5) + boardthickness ,(length/5) + boardthickness], [boardthickness,width-boardthickness], color = linecolor) # C
+            plt.plot([(length-archDiam-boardthickness)/2,archDiam+boardthickness],[boardthickness,boardthickness], color=linecolor) # B
+            plt.plot([(length+archDiam+boardthickness)/2,length-archDiam-boardthickness],[boardthickness,boardthickness], color=linecolor) # B
+            plt.plot([(length/5) + boardthickness ,(length/5) + boardthickness], [boardthickness,width-boardthickness], color = linecolor) 
             #plt.plot([]) #TODO external line around the snookers
 
-            plt.plot([0,0], [0, width], color = "blue")
-            plt.plot([0, length], [width, width], color = "blue")
-            plt.plot([length, length], [width, 0], color = "blue")
-            plt.plot([0, length], [0, 0], color = "blue")
+            plt.plot([0,0], [0, width], color = linecolor)
+            plt.plot([0, length], [width, width], color = linecolor)
+            plt.plot([length, length], [width, 0], color = linecolor)
+            plt.plot([0, length], [0, 0], color = linecolor)
 
            
             # #Prepare Arcs

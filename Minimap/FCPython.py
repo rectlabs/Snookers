@@ -31,7 +31,7 @@ def createPitch(length,width, unity,linecolor): # in meters
             ax=fig.add_subplot(1,1,1)
            
             #Pitch Outline & Centre Line
-            archDiam = 5
+            archDiam = 3
             boardthickness = 10
             # inner converings
             plt.plot([boardthickness,boardthickness],[archDiam+boardthickness,width-archDiam-boardthickness], color=linecolor) 

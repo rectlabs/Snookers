@@ -32,7 +32,7 @@ def createPitch(length,width, unity,linecolor): # in meters
            
             #Pitch Outline & Centre Line
             archDiam = 5
-            boardthickness = 
+            boardthickness = 5
             # inner converings
             plt.plot([boardthickness,boardthickness],[archDiam+boardthickness,width-archDiam-boardthickness], color=linecolor) # A
             plt.plot([archDiam+boardthickness,length-archDiam-boardthickness],[width-boardthickness,width-boardthickness], color=linecolor)

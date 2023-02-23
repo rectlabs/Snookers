@@ -50,10 +50,10 @@ def createPitch(length,width, unity,linecolor): # in meters
 
            
             # #Prepare Arcs
-            leftArcDown = Arc((boardthickness, boardthickness),height=archDiam*2,width=archDiam*2,angle=90,theta1 = 270, theta2=360, color=linecolor)
-            leftArcUp = Arc((boardthickness,width-boardthickness),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, theta2 = 270, color=linecolor)
-            rightArcUp = Arc((length-boardthickness, width-boardthickness),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 90, theta2 = 180, color=linecolor)
-            rightArcDown = Arc((length-boardthickness, boardthickness), height=archDiam*2, width=archDiam*2, angle=90, theta1 = 0,theta2 = 90, color=linecolor)
+            leftArcDown = Arc((boardthickness, boardthickness),height=archDiam*2,width=archDiam*2,angle=90,theta1 = 360, theta2=270, color=linecolor)
+            leftArcUp = Arc((boardthickness,width-boardthickness),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 270, theta2 = 180, color=linecolor)
+            rightArcUp = Arc((length-boardthickness, width-boardthickness),height=archDiam*2,width=archDiam*2,angle=90, theta1 = 180, theta2 = 90, color=linecolor)
+            rightArcDown = Arc((length-boardthickness, boardthickness), height=archDiam*2, width=archDiam*2, angle=90, theta1 = 90,theta2 = 0, color=linecolor)
             topCentre = Arc((length/2, width - boardthickness), height=archDiam*2, width=archDiam*2, angle=180, theta1 = 180,theta2 = 360, color=linecolor)
             bottomCentre = Arc((length/2, boardthickness), height=archDiam*2, width=archDiam*2, angle=180, theta1 = 360,theta2 = 180, color=linecolor)
             # #Draw Arcs

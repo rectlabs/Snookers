@@ -16,6 +16,7 @@ class Minimap:
         return
     
     def start(self):
+        ann = annotate()
         PCircle = []
         diameter = 2
         positions = [(80,35), (82,34), (82,36), (84, 33), (84, 35), (84, 37), (86, 32), (86, 34), (86, 36), (86, 38), (88, 31), (88, 33), (88, 35), (88, 37), (88, 39)]
@@ -32,7 +33,6 @@ class Minimap:
         fig.set_facecolor('black')
         title = "{}: {} , {}:{}".format(self.TeamA, self.ScoreA, self.TeamB, self.ScoreB)
         ax.set_title(title, fontsize = 20)
-        #ann = annotate()
         PCircles = self.start()
         for balls in PCircles:
             ax.add_patch(balls) 

@@ -19,7 +19,7 @@ class Minimap:
         ann = annotate()
         PCircle = []
         diameter = 2
-        positions = [(80,35), (82,34), (82,36), (84, 33), (84, 35), (84, 37), (86, 32), (86, 34), (86, 36), (86, 38), (88, 31), (88, 33), (88, 35), (88, 37), (88, 39)]
+        positions = [(80,35), (84,34), (84,36), (86, 33), (86, 35), (86, 37), (88, 32), (88, 34), (88, 36), (88, 38), (90, 31), (90, 33), (90, 35), (90, 37), (90, 39)]
         for (x,y) in positions:
             passCircle = ann.CreateIdentity(x, y, str(np.random.choice([i for i in range(30)])/30), diameter = diameter)
             PCircle.append(passCircle)

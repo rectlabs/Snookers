@@ -7,14 +7,14 @@ class annotate:
     def __init__(self):
         return
 
-    def CreateIdentity(self, x, y, color, name = 'E', nameloc = 'up'):
-        passCircle=plt.Circle((x,y),2,color=color)
-        if nameloc == 'up':
-            plt.text(x,y+3,name) 
-        elif nameloc == 'down':
-            plt.text(x,y-3, name)
-        else:
-            plt.text(x,y, name)   
+    def CreateIdentity(self, x, y, color, name = 'E', nameloc = 'up', diameter = 2):
+        passCircle=plt.Circle((x,y),diameter,color=color)
+        # if nameloc == 'up':
+        #     plt.text(x,y+3,name) 
+        # elif nameloc == 'down':
+        #     plt.text(x,y-3, name)
+        # else:
+        #     plt.text(x,y, name)   
         passCircle.set_alpha(.2) 
         return passCircle 
 

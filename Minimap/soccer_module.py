@@ -1,21 +1,17 @@
 import numpy as np 
 from .FCPython import *
 import matplotlib.pyplot as plt 
-
+import matplotlib
 
 class annotate:
     def __init__(self):
         return
 
     def CreateIdentity(self, x, y, color, name = 'E', nameloc = 'up', diameter = 2):
-        passCircle=plt.Circle((x,y),diameter,color=color)
-        # if nameloc == 'up':
-        #     plt.text(x,y+3,name) 
-        # elif nameloc == 'down':
-        #     plt.text(x,y-3, name)
-        # else:
-        #     plt.text(x,y, name)   
-        passCircle.set_alpha(.2) 
+        passCircle=plt.Circle((x,y),diameter,color=color)  
+        # passCircle.set_alpha(.2) 
+        # passCircle = matplotlib.patches.Circle((x, y), radius=int(diameter/2))# linewidth=7, edgecolor="orange"
+
         return passCircle 
 
     def CreateArrow(self, x, y, destx, desty, start_end):

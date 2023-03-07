@@ -11,7 +11,7 @@ class annotate:
 
     def CreateIdentity(self, x, y, color, name = 'E', nameloc = 'up', diameter = 2):
         choice = np.random.choice([i for i in range(self.n)])
-        passCircle=plt.Circle((x,y),diameter,color=np.random.choice(self.colors[choice])) 
+        passCircle=plt.Circle((x,y),diameter,color=self.colors[choice])
         # passCircle.set_alpha(.2) 
         # passCircle = matplotlib.patches.Circle((x, y), radius=int(diameter/2))# linewidth=7, edgecolor="orange"
 

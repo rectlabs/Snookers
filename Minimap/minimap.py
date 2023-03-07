@@ -23,6 +23,11 @@ class Minimap:
         for (x,y) in positions:
             passCircle = ann.CreateIdentity(x, y, str(np.random.choice([i for i in range(10)])/10), diameter = diameter)
             PCircle.append(passCircle)
+
+        # insert the trigger ball (white)
+        whiteballPos = (34, np.random.choice([i for i in range(10, 60)]))
+        circle1 = patches.Circle(whiteballPos, diameter=2, color='white')
+        PCircle.append(circle1)
         return PCircle
 
 

@@ -27,7 +27,7 @@ class Minimap:
 
         # insert the trigger ball (white)
         whiteballPos = (34, np.random.choice([i for i in range(10, 60)]))
-        circle1 = matplotlib.patches.Circle(whiteballPos, diameter=2, color='white')
+        circle1 = matplotlib.patches.Circle(whiteballPos, 2, color='white')
         PCircle.append(circle1)
         return PCircle
 

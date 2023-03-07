@@ -6,12 +6,12 @@ import matplotlib
 class annotate:
     def __init__(self, n = 100):
         self.colors = plt.cm.rainbow(np.linspace(0, 1, n))
-
+        self.n = n
         return
 
     def CreateIdentity(self, x, y, color, name = 'E', nameloc = 'up', diameter = 2):
-        choice = np.random.choice(self.colors)
-        passCircle=plt.Circle((x,y),diameter,color=np.random.choice(choice)) 
+        choice = np.random.choice([i for i in range(self.n)])
+        passCircle=plt.Circle((x,y),diameter,color=np.random.choice(self.colors[choice])) 
         # passCircle.set_alpha(.2) 
         # passCircle = matplotlib.patches.Circle((x, y), radius=int(diameter/2))# linewidth=7, edgecolor="orange"
 

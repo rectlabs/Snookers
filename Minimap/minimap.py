@@ -29,7 +29,7 @@ class Minimap:
     def CreateMinimap(self, court_type = "snookers"):
         soc = SoccerModule(x = 120,y = 70, unity = 'meters', linecolor = 'r', court_type = court_type)
         fig, ax = soc.CreatePitch()
-        fig.set_facecolor('white')
+        fig.set_facecolor('green')
         title = "{}: {} , {}:{}".format(self.TeamA, self.ScoreA, self.TeamB, self.ScoreB)
         ax.set_title(title, fontsize = 20)
         PCircles = self.start()

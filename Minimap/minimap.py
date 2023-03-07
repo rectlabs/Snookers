@@ -1,5 +1,6 @@
 
 import numpy as np 
+import matplotlib
 import matplotlib.pyplot as plt 
 from .soccer_module import SoccerModule, annotate
 
@@ -26,7 +27,7 @@ class Minimap:
 
         # insert the trigger ball (white)
         whiteballPos = (34, np.random.choice([i for i in range(10, 60)]))
-        circle1 = patches.Circle(whiteballPos, diameter=2, color='white')
+        circle1 = matplotlib.patches.Circle(whiteballPos, diameter=2, color='white')
         PCircle.append(circle1)
         return PCircle
 
